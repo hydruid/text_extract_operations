@@ -12,3 +12,5 @@ cp $sourcefile $destinationfile
 if [[ "$*" == *"dfl"* ]]; then
 	sed -i '1d' $destinationfile
 fi
+
+
