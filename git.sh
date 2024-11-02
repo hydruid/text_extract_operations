@@ -1,6 +1,6 @@
 #! /bin/bash
 
-#variables
+#Variables
 date="$(date)"
 
 git add .
