@@ -9,7 +9,7 @@ delete_first_line
 
 #Add Categories
 add_category_1b="CreditCard"
-add_category_1=('"FPB CR CARDINTERNETWEB' '"Payment to Chase card ending in')
+add_category_1=('"FPB CR CARDINTERNETWEB' '"Payment to Chase card ending in', 'Payment Thank You-Mobile')
 add_category_2b="FastFood"
 add_category_2=('"SONIC DRIVE IN' '"CS GRUBHUB GC' '"MCDONALDS ' '"Subway ')
 add_category_3b="Service"
@@ -22,8 +22,8 @@ add_category_6b="Church"
 add_category_6=('"NORTHWEST BAPTIST')
 add_category_7b="Medical"
 add_category_7=('"KIERL ORTHODONTI')
-add_category_8b=""
-add_category_8=('asdfasdf')
+add_category_8b="Shopping"
+add_category_8=('WAL-MART #')
 add_category_9b=""
 add_category_9=('asdfasdf')
 add_category_10b=""
