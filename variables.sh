@@ -1,8 +1,8 @@
 #! /bin/bash
 
 #Variables
-sourcefile="/home/treyh/Documents/chase.txt"
-destinationfile="chase_scrub.txt"
+sourcefile="/home/treyh/Documents/chase_debit.txt"
+destinationfile="chase_debit_scrub.txt"
 
 #Cleanup and Copy File
 rm -fr $destinationfile
@@ -28,26 +28,25 @@ sed -i "s/'//g" $destinationfile
 add_category () {
 
 add_category_1b="CreditCard"
-add_category_2b="FastFood"
-add_category_3b="Service"
-add_category_4b="Bill"
-add_category_5b="Misc"
-add_category_6b="Church"
-add_category_7b="Medical"
-add_category_8b=""
-add_category_9b=""
-add_category_10b=""
-
 add_category_1=('"FPB CR CARDINTERNETWEB' '"Payment to Chase card ending in')
+add_category_2b="FastFood"
 add_category_2=('"SONIC DRIVE IN' '"CS GRUBHUB GC' '"MCDONALDS ' '"Subway ')
+add_category_3b="Service"
 add_category_3=('"SCHOOLCAFE ' '"MICROSOFT REDMOND WA' '"GOOGLE Spotify' '"Netflix.com ' '"PANERA SIP CLUB ' '"YMCA of Greater' '"Hulu 877' '"YMCA OF GREATER')
+add_category_4b="Bill"
 add_category_4=('"TOYOTA ACH RTL' '"COX COMM' '"INSTRUMENT RENTAL' '"Online Payment 2231')
+add_category_5b="Misc"
 add_category_5=('"AT OK CITY ZOO' '"GOODIES EDMOND OK' '"ATM WITHDRAWAL ' '"CCSALLABOUTNOW PHOTO' '"PARTY CITY ' '"SFDCIMARRONMIDDLESCH')
+add_category_6b="Church"
 add_category_6=('"NORTHWEST BAPTIST')
+add_category_7b="Medical"
 add_category_7=('"KIERL ORTHODONTI')
-add_category_8=('asdf')
-add_category_9=('asdf')
-add_category_10=('asdf')
+add_category_8b=""
+add_category_8=('asdfasdf')
+add_category_9b=""
+add_category_9=('asdfasdf')
+add_category_10b=""
+add_category_10=('asdfasdf')
 
 for add_category_1a in "${add_category_1[@]}"; do
 sed -i "s/$add_category_1a/$add_category_1b,$add_category_1a/g" $destinationfile
