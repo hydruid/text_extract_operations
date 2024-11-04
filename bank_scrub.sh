@@ -11,23 +11,23 @@ delete_first_line
 add_category_1b="CreditCard"
 add_category_1=('"FPB CR CARDINTERNETWEB' '"Payment to Chase card ending in', 'Payment Thank You-Mobile')
 add_category_2b="FastFood"
-add_category_2=('"SONIC DRIVE IN' '"CS GRUBHUB GC' '"MCDONALDS ' '"Subway ')
+add_category_2=('"SONIC DRIVE IN' '"CS GRUBHUB GC' '"MCDONALDS ' '"Subway ', 'CHIPOTLE ' 'FREDDYS ' 'TEXAS ROADHOUSE #' 'TACO BELL ' 'OLIVE GARDEN ' 'BURGER KING ' 'WHATABURGER ' 'SQ SCOOTS ITALIAN ' 'PANERA BREAD #' 'TSTKITCHEN NO' 'SWITCH 7725' 'MOBETTAHS ' 'QDOBA ' 'Swig ' 'MARCOS PIZZA -' '038 BRAUMS STORE' 'JOHNNIES CHARCOAL BROI' 'TST RICE N BUNS' 'DAVES HOT CHICKEN' 'DD SANTINISNEWYORKS' 'DONUT NEST' 'JACK IN THE BOX' 'MCDONALDS ' 'RAISING CANES ')	
 add_category_3b="Service"
 add_category_3=('"SCHOOLCAFE ' '"MICROSOFT REDMOND WA' '"GOOGLE Spotify' '"Netflix.com ' '"PANERA SIP CLUB ' '"YMCA of Greater' '"Hulu 877' '"YMCA OF GREATER')
 add_category_4b="Bill"
-add_category_4=('"TOYOTA ACH RTL' '"COX COMM' '"INSTRUMENT RENTAL' '"Online Payment 2231')
+add_category_4=('"TOYOTA ACH RTL' '"COX COMM' '"INSTRUMENT RENTAL' '"Online Payment 2231' 'GOOGLE FI ' 'GOOGLE Google Store' 'OKLAHOMANATURALGAS' 'PROGRESSIVE INS')
 add_category_5b="Misc"
-add_category_5=('"AT OK CITY ZOO' '"GOODIES EDMOND OK' '"ATM WITHDRAWAL ' '"CCSALLABOUTNOW PHOTO' '"PARTY CITY ' '"SFDCIMARRONMIDDLESCH')
+add_category_5=('"AT OK CITY ZOO' '"GOODIES EDMOND OK' '"ATM WITHDRAWAL ' '"CCSALLABOUTNOW PHOTO' '"PARTY CITY ' '"SFDCIMARRONMIDDLESCH' 'AMERICAN AIR' 'PETCO ' 'PETSMART #' 'POSTAL ANNEX #')
 add_category_6b="Church"
 add_category_6=('"NORTHWEST BAPTIST')
 add_category_7b="Medical"
-add_category_7=('"KIERL ORTHODONTI')
+add_category_7=('"KIERL ORTHODONTI' 'COMFORT DENTAL NORTH MAY' 'CVSPHARMACY ' 'Express Scripts Phrmcy')
 add_category_8b="Shopping"
-add_category_8=('WAL-MART #')
-add_category_9b=""
-add_category_9=('asdfasdf')
-add_category_10b=""
-add_category_10=('asdfasdf')
+add_category_8=('WAL-MART #' 'SAMSCLUB #' 'CREST FOODS #' 'DOLLAR GENERAL #' 'FAMILY DOLLAR' 'WALMART PAY' 'WALMART.COM' 'WEGMANS ')
+add_category_9b="Fuel"
+add_category_9=('SUNOCO ' 'CASEYS #' 'E EXPRESS AT B' 'LOVES #' 'PHILLIPS 66 -')
+add_category_10b="Maintenance"
+add_category_10=('BROADWAY TAG AGENCY' 'SPORT CLIPS -')
 
 for add_category_1a in "${add_category_1[@]}"; do
 sed -i "s/$add_category_1a/$add_category_1b,$add_category_1a/g" $destinationfile
@@ -62,3 +62,6 @@ done
 
 #Print File
 cat $destinationfile
+
+#End
+exit 0

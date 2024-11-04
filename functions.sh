@@ -22,3 +22,4 @@ sed -i "s/  //g" $destinationfile
 #Remove special Charachters
 sed -i "s/*//g" $destinationfile 
 sed -i "s/'//g" $destinationfile
+sed -i "s|/||g" $destinationfile
